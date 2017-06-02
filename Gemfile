@@ -21,7 +21,7 @@ request.body = env.to_json
 response = http.request(request)
 puts response.body
 
-gem 'rails', '3.2.14'
+gem 'rails', '~> 3.2.22.3'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -39,10 +39,10 @@ group :assets do
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 
-  gem 'uglifier', '>= 1.0.3'
+  gem 'uglifier', '>= 2.7.2'
 end
 
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 3.1.3'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -59,3 +59,5 @@ gem 'capistrano-rails'
 
 # To use debugger
 # gem 'debugger'
+gem 'i18n', '>= 0.6.6'
+gem 'rack-ssl', '>= 1.3.4'

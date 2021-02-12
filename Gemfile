@@ -21,7 +21,7 @@ request.body = env.to_json
 response = http.request(request)
 puts response.body
 
-gem 'rails', '3.2.14'
+gem 'rails', '6.0.3.5'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
